@@ -50,3 +50,35 @@ new Date(milliseconds)
     const d4 = new Date("13 february, 2022");
     console.log(d4);
 }
+
+//new Date(year,month,day,hours,minutes,seconds,ms)
+//JavaScript counts months from 0
+{
+    const d = new Date(2022, 1, 13, 16, 55, 55, 999);
+    console.log(d);
+    const d1 = new Date(2022, 1, 13);
+    console.log(d1);
+}
+
+//Overflow
+{
+    const d = new Date(2022, 13, 30); //december = 11, february(next year) = 13, 30 days (28 February + 2 March)
+    console.log(d);
+}
+
+//Previous century
+{
+    const d = new Date(22, 11, 30); //first argument should be less than 3 digits. then js will interpret the argument as privious century
+    console.log(d);
+}
+
+// new Date(millisecond)
+// JavaScript stores dates as number of milliseconds since January 01, 1970.
+// Zero time is January 01, 1970 00:00:00 UTC.
+// One day (24 hours) is 86 400 000 milliseconds.
+{
+    const d = new Date(1000);// 1s = 1000ms
+    console.log(d); //adds 6 hours for bangladesh standard time
+}
+
+//Date method
