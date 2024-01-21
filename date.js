@@ -117,3 +117,8 @@ new Date(milliseconds)
     const newD = d.toISOString();
     console.log(newD);
 }
+
+{
+    const d = new Date("2015-03-25T12:00:00Z");
+    console.log(d);
+}
