@@ -68,7 +68,7 @@ new Date(milliseconds)
 
 //Previous century
 {
-    const d = new Date(22, 11, 30); //first argument should be less than 3 digits. then js will interpret the argument as privious century
+    const d = new Date(22, 11, 30); //first argument should be less than 3 digits. then js will interpret the argument as previous century
     console.log(d);
 }
 
