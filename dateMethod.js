@@ -34,3 +34,22 @@
     const newD = d.toISOString();
     console.log(newD);
 }
+
+//date get methods
+/*
+UTC Method	Same As	Description
+
+getUTCDate()	            getDate()	            Returns the UTC date
+getUTCFullYear()	        getFullYear()	        Returns the UTC year
+getUTCMonth()	            getMonth()	            Returns the UTC month
+getUTCDay()	                getDay()	            Returns the UTC day
+getUTCHours()	            getHours()	            Returns the UTC hour
+getUTCMinutes()	            getMinutes()	        Returns the UTC minutes
+getUTCSeconds()	            getSeconds()	        Returns the UTC seconds
+getUTCMilliseconds()	    getMilliseconds()	    Returns the UTC milliseconds
+*/
+
+{
+    const d = new Date();
+    console.log(d.getDate())
+}
