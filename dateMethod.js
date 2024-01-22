@@ -139,5 +139,5 @@ total year = total millisecond/1 year unit millisecond
 
 {
     const d = new Date();
-    console.log(d.getTimezoneOffset());
+    console.log(d.getTimezoneOffset()); //-360 means UTC time is 6 hours behind or my local time is 6 hours ahead
 }
